@@ -49,7 +49,7 @@ if (event.key === "Enter"){
     // if (guessInput.value == "test"){
     //     displayWin();
     // }
-    if (guessInput.value == games[i].generic){
+    if (guessInput.value.toLowerCase().trim() == games[i].generic){
         console.log("Correct");
         displayCorrect();
         i++;

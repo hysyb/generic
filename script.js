@@ -6,7 +6,12 @@ const victory = document.getElementById('victory');
 const games = [
   { generic: 'bandage', brand: 'Band-Aid' },
   { generic: 'adjustable', brand: "Crescent Wrench" },
-  { generic: 'acetaminophen', brand: "Tylenol" }
+  { generic: 'acetaminophen', brand: "Tylenol" },
+  { generic: 'tissue', brand: "Kleenex" },
+  { generic: 'lip balm', brand: "ChapStick" },
+  { generic: 'slow cooker', brand: "Crock Pot" },
+  { generic: 'inline skates', brand: "Roller Blades" }
+
 ];
 
 let i = 0;

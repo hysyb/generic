@@ -3,6 +3,7 @@
 :root{
     --background-color: rgb(65,65,65);
     --correct-color: rgb(84, 122, 84);
+    --wrong-color: rgb(233, 105, 105);
 }
 
 body{
@@ -14,7 +15,7 @@ body{
     background-color: var(--background-color);
     color: whitesmoke;
     font-size: 3rem;
-    transition: all 1.25s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 input {
@@ -23,7 +24,7 @@ input {
     color: whitesmoke;
     font-size: 3rem;
     width: 7.25ch;
-    transition: all 1.25s ease-in-out;
+    transition: all 1s ease-in-out;
  
 }
 input:focus{
@@ -34,6 +35,9 @@ input:focus{
     display: none;
 }
 #correct{
+    display: none;
+}
+#wrong{
     display: none;
 }
 body.active{

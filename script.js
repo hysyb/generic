@@ -16,6 +16,7 @@ guessInput.value = "";
 
 
 brand.innerText = games[i].brand;
+
 function displayWin(){
     line.style.display = "none";
     victory.style.display = "block";
@@ -35,7 +36,25 @@ function displayCorrect(){
         //why doesnt this work??
         guessInput.style.backgroundColor = "var(--background-color)";
         guessInput.focus();
-    }, 3000);
+    }, 1700);
+    
+
+}
+function displayWrong(){
+    document.body.style.transition = "all 0.12s ease-in-out";
+    line.style.display = "none";
+    wrong.style.display = "block";
+    document.body.style.backgroundColor = "var(--wrong-color)";
+    guessInput.style.backgroundColor = "var(--wrong-color)";
+
+    setTimeout(() => {
+        line.style.display = "block";
+        wrong.style.display = "none";
+        document.body.style.backgroundColor = "var(--background-color)";
+        //why doesnt this work??
+        guessInput.style.backgroundColor = "var(--background-color)";
+        guessInput.focus();
+    }, 250);
     
 
 }
@@ -63,6 +82,9 @@ if (event.key === "Enter"){
 
         }
       
+    }
+    else {
+        displayWrong();
     }
 }
 })

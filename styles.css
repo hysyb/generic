@@ -1,0 +1,41 @@
+
+
+:root{
+    --background-color: rgb(65,65,65);
+    --correct-color: rgb(84, 122, 84);
+}
+
+body{
+    display: flex;
+    height:100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    color: whitesmoke;
+    font-size: 3rem;
+    transition: all 1.25s ease-in-out;
+}
+
+input {
+    background-color: var(--background-color);
+    border: none;
+    color: whitesmoke;
+    font-size: 3rem;
+    width: 7.25ch;
+    transition: all 1.25s ease-in-out;
+ 
+}
+input:focus{
+     outline: none; 
+    }
+
+#victory{
+    display: none;
+}
+#correct{
+    display: none;
+}
+body.active{
+    background-color: var(--correct-color);
+}

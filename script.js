@@ -34,6 +34,7 @@ function displayCorrect(){
         document.body.style.backgroundColor = "var(--background-color)";
         //why doesnt this work??
         guessInput.style.backgroundColor = "var(--background-color)";
+        guessInput.focus();
     }, 3000);
     
 
